@@ -15,18 +15,19 @@ export function login(data: LoginData) {
   return request.post<LoginResponse>('/user/login', data)
 }
 
+
 export interface RegisterData {
-  email: string
-  invite_code: string
-  username: string
-  realname: string
+  email: string,
+  invite_code: string,
+  username: string,
+  realname: string,
   password: string
 }
 
-export interface RegisterResponse {
-  result: 'success' | 'fail'
+export interface ResponseSchema {
+    result: 'success' | 'fail'
 }
 
 export function register(data: RegisterData) {
-  return request.post<RegisterResponse>('/user/register', data)
+    return request.post<ResponseSchema>('/user/register', data)
 }
