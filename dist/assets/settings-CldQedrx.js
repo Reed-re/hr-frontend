@@ -1,0 +1,1 @@
+import{I as e,p as t,u as n}from"./runtime-core.esm-bundler-q_RshDNy.js";import{n as r}from"./index-DTlY8prb.js";var i={};function a(r,i){return e(),t(`div`,null,[...i[0]||=[n(`h1`,null,`设置`,-1)]])}var o=r(i,[[`render`,a]]);export{o as default};
